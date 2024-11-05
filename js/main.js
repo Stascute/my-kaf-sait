@@ -5,6 +5,7 @@ let arr = [{"Отделение":"Ядерной физики","Кафедра":
 function onclickbase(){
   for (let i = 0;i < arr.length;i++) {
     document.getElementById(String(i + 1)).innerHTML = arr[i]["Кафедра"];
+    document.getElementById(String(i + 1)).removeAttribute("disabled");
   }
   document.getElementById(22).style.display = "inherit";
   document.getElementById(23).style.display = "inherit";
@@ -15,6 +16,7 @@ function onclickButton(el) {
   let l = el.id;
   for (let i = 0;i < hlp.length;i++) {
     document.getElementById(String(i + 1)).innerHTML = hlp[i] + " : " + arr[l-1][hlp[i]];
+    document.getElementById(String(i + 1)).setAttribute('disabled','true');
   }
   document.getElementById(22).style.display = "none";
   document.getElementById(23).style.display = "none";
