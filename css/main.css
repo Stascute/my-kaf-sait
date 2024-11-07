@@ -8,30 +8,38 @@
   position: fixed;
   width:100%;
   height: 10vh;
-  text-align: center;
-  background-image: url("https://phys.msu.ru/rus/about/structure/Mediacenter/img/%D1%81%D0%B8%D0%BD%D1%8F%D1%8F%202022.png");
+  background-color: black;
   background-size: contain;
-  border-bottom: 0.5vh solid silver;
 }
 #header button{
-  width: 2%;
-  height: 4vh;
+  border-radius: 20%;
+  background-color: none;
+  height: 6vh;
+  border:none;
+}
+#header button img{
+  height:100%;
+  weight:100%;
+}
+
+#header button:active{
+  transition-duration: 0.4s;
+  background-color: gray;
 }
 #header input{
-  margin-top:1vh;
+  margin-left:45%;
+  margin-top:2.5vh;
   height:4vh;
 }
 #aside {
+  width:20%;
+  color:white;
   font-family: "Play";
-  border-right: 0.25vw solid silver;
   position: fixed;
-  top: 10.45vh;
-  width:3%;
-  height: 79.55vh;
-  background-color:#FDD9B5;
-}
-#aside a, #aside p,#aside img,#aside span{
-  visibility: hidden;
+  top:10vh;
+  height: 80vh;
+  background-color:#070714;
+  visibility : hidden;
 }
 #aside a{
   text-decoration: none;
@@ -44,20 +52,12 @@
   margin-left:5%;
   width:30%;
 }
-#aside:hover{
-  width:20%;
-}
-#aside:hover p,#aside:hover a,#aside:hover img,#aside:hover span{
-  visibility: visible;
-}
 #main {
   height: 100vh;
   background-color: #FDD9B5;
   font-family: "Comfortaa";
   padding-top:10.45vh;
-  margin-left:3.2%;
-  width:96.75%;
-  padding-bottom:10vh;
+  width:100%;
 }
 #main button{
   border-radius: 0;
@@ -80,29 +80,24 @@
   margin-top: -1.5rem;
 }
 #footer {
-  border-top: 0.5vh solid silver;
   top:89.95vh;
   position: fixed;
   width:100%;
   height: 10vh;
-  background-color:#FDD9B5;
+  background-color:#070714;
   font-family: "Comfortaa";
 }
 #footer button{
+  color: white;
   border: none;
-  background-color: #FDD9B5;
-  padding:4vh 50%;
-  color: black;
-
-}
-#footer button::after{
-  content: "Направления";
-}
-#footer button:hover{
-  transition-duration: 0.4s;
-  background-color: #E0FFFF;
+  background-color: #070714;
+  width:100%;
+  height: 10vh;
 }
 #footer button:active{
   transition-duration: 0.25s;
-  background-color: #40E0D0;
+  background-color: gray;
+}
+#footer button > img{
+  width:3%;
 }
