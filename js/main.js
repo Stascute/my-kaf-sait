@@ -4,6 +4,8 @@ let arr = [{"Отделение":"Ядерной физики","Кафедра":
 
 function onclickbase(){
   document.getElementById("main").innerHTML = "";
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("main").style.width = "100%";
   document.getElementById("main").style.backgroundColor = "#FDD9B5";
   for (let i = 0;i < arr.length;i++) {
     let button = document.createElement('button');
@@ -13,6 +15,8 @@ function onclickbase(){
     button.setAttribute('onclick',"onclickButton(this)");
     document.getElementById("main").append(button);
   }
+  let button = document.createElement('button');
+  document.getElementById("main").append(button);
 }
 onclickbase()
 //hlp[i] + " : " + arr[el.id][hlp[i]]
@@ -20,6 +24,8 @@ function onclickButton(el) {
   let l = el.id
   document.getElementById("main").innerHTML = "";
   document.getElementById("main").style.backgroundColor = "white";
+  document.getElementById("main").style.marginLeft = "0.5%";
+  document.getElementById("main").style.width = "99.5%";
   for (let i = 0;i < hlp.length;i++) {
     let st = document.createElement('h1');
     st.textContent = hlp[i] + ":";
@@ -28,9 +34,14 @@ function onclickButton(el) {
     inf.textContent = arr[l][hlp[i]];
     document.getElementById("main").append(inf);
   }
+  let button = document.createElement('button');
+  button.style.backgroundColor = "white";
+  document.getElementById("main").append(button);
 }
 document.querySelector('#input').oninput = function() {
   document.getElementById("main").innerHTML = "";
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("main").style.width = "100%";
   document.getElementById("main").style.backgroundColor = "#FDD9B5";
   let vall = document.getElementById("input").value.trim();
   if (vall != ""){
@@ -48,4 +59,12 @@ document.querySelector('#input').oninput = function() {
   else {
     onclickbase();
   }
+}
+function ViewAside(){
+  console.log("ghbdtnЫ");
+  document.getElementById("aside").style.visibility = "visible";
+}
+document.getElementById("main").onmouseover = unvisible33;
+function unvisible33(){
+  document.getElementById("aside").style.visibility = "hidden";
 }
