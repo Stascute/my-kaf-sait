@@ -4,6 +4,7 @@ let arr = [{"Отделение":"Ядерной физики","Кафедра":
 
 function onclickbase(){
   document.getElementById("main").innerHTML = "";
+  document.getElementById("main").style.backgroundColor = "#FDD9B5";
   for (let i = 0;i < arr.length;i++) {
     let button = document.createElement('button');
     button.setAttribute('type','button');
@@ -18,15 +19,33 @@ onclickbase()
 function onclickButton(el) {
   let l = el.id
   document.getElementById("main").innerHTML = "";
+  document.getElementById("main").style.backgroundColor = "white";
   for (let i = 0;i < hlp.length;i++) {
-    let st = document.createElement('h');
+    let st = document.createElement('h1');
     st.textContent = hlp[i] + ":";
     document.getElementById("main").append(st);
     let inf = document.createElement('p');
     inf.textContent = arr[l][hlp[i]];
     document.getElementById("main").append(inf);
   }
-  function onaside(){
-    console.log("hfffff");
+}
+document.querySelector('#input').oninput = function() {
+  document.getElementById("main").innerHTML = "";
+  document.getElementById("main").style.backgroundColor = "#FDD9B5";
+  let vall = document.getElementById("input").value.trim();
+  if (vall != ""){
+    for (let i = 0;i < arr.length;i++) {
+      if (arr[i]["Кафедра"].search(vall) != -1){
+        let button = document.createElement('button');
+        button.setAttribute('type','button');
+        button.setAttribute('id',String(i));
+        button.textContent = arr[i]["Кафедра"];
+        button.setAttribute('onclick',"onclickButton(this)");
+        document.getElementById("main").append(button);
+      }
+    }
+  }
+  else {
+    onclickbase();
   }
 }
