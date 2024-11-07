@@ -30,24 +30,29 @@
   height: 79.55vh;
   background-color:#FDD9B5;
 }
-#aside a, #aside p,#aside img{
+#aside a, #aside p,#aside img,#aside span{
   visibility: hidden;
 }
 #aside a{
   text-decoration: none;
 }
+#firsttext{
+  color: gray;
+}
 #aside img{
   border-radius: 100%;
   margin-left:5%;
-  width:90%;
+  width:30%;
 }
 #aside:hover{
   width:20%;
 }
-#aside:hover p,#aside:hover a,#aside:hover img{
+#aside:hover p,#aside:hover a,#aside:hover img,#aside:hover span{
   visibility: visible;
 }
 #main {
+  height: 100vh;
+  background-color: #FDD9B5;
   font-family: "Comfortaa";
   padding-top:10.45vh;
   margin-left:3.2%;
@@ -66,8 +71,13 @@
   transition-duration: 0.25s;
   background-color: #E0FFFF;
 }
-#main h{
+#main h1{
+  line-height: 5;
   color: gray;
+  font-size: 0.8rem;
+}
+#main p{
+  margin-top: -1.5rem;
 }
 #footer {
   border-top: 0.5vh solid silver;
