@@ -26,4 +26,7 @@ function onclickButton(el) {
     inf.textContent = arr[l][hlp[i]];
     document.getElementById("main").append(inf);
   }
+  function onaside(){
+    console.log("hfffff");
+  }
 }
