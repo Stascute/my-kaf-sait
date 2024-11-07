@@ -60,9 +60,11 @@ document.querySelector('#input').oninput = function() {
     onclickbase();
   }
 }
+let count = 1
 function ViewAside(){
-  console.log("ghbdtnЫ");
-  document.getElementById("aside").style.visibility = "visible";
+  if (count%2 == 1){document.getElementById("aside").style.visibility = "visible";}
+  else {document.getElementById("aside").style.visibility = "hidden";}
+  count ++;
 }
 document.getElementById("main").onmouseover = unvisible33;
 function unvisible33(){
