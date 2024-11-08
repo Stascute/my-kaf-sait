@@ -4,8 +4,6 @@ let arr = [{"Отделение":"Ядерной физики","Кафедра":
 
 function onclickbase(){
   document.getElementById("main").innerHTML = "";
-  document.getElementById("main").style.marginLeft = "0%";
-  document.getElementById("main").style.width = "100%";
   document.getElementById("main").style.backgroundColor = "#FDD9B5";
   for (let i = 0;i < arr.length;i++) {
     let button = document.createElement('button');
@@ -24,8 +22,6 @@ function onclickButton(el) {
   let l = el.id
   document.getElementById("main").innerHTML = "";
   document.getElementById("main").style.backgroundColor = "white";
-  document.getElementById("main").style.marginLeft = "0.5%";
-  document.getElementById("main").style.width = "99.5%";
   for (let i = 0;i < hlp.length;i++) {
     let st = document.createElement('h1');
     st.textContent = hlp[i] + ":";
@@ -33,15 +29,16 @@ function onclickButton(el) {
     let inf = document.createElement('p');
     inf.textContent = arr[l][hlp[i]];
     document.getElementById("main").append(inf);
+    let dive =  document.createElement('div');
+    document.getElementById("main").append(dive);
   }
   let button = document.createElement('button');
-  button.style.backgroundColor = "white";
+  button.style.backgroundColor = "lightgray";
   document.getElementById("main").append(button);
+  window.scroll(0, 0);
 }
 document.querySelector('#input').oninput = function() {
   document.getElementById("main").innerHTML = "";
-  document.getElementById("main").style.marginLeft = "0%";
-  document.getElementById("main").style.width = "100%";
   document.getElementById("main").style.backgroundColor = "#FDD9B5";
   let vall = document.getElementById("input").value.trim();
   if (vall != ""){
@@ -60,13 +57,14 @@ document.querySelector('#input').oninput = function() {
     onclickbase();
   }
 }
-let count = 1
 function ViewAside(){
-  if (count%2 == 1){document.getElementById("aside").style.visibility = "visible";}
+  if (document.getElementById("aside").style.visibility == "hidden"){document.getElementById("aside").style.visibility = "visible";}
   else {document.getElementById("aside").style.visibility = "hidden";}
-  count ++;
 }
 document.getElementById("main").onmouseover = unvisible33;
 function unvisible33(){
   document.getElementById("aside").style.visibility = "hidden";
+}
+function AboutMe() {
+  alert("Понравился?(сайт), мой тг: @stascute");
 }
