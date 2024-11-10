@@ -12,8 +12,10 @@
   background-size: contain;
 }
 #header button{
-  border-radius: 20%;
-  background-color: none;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  border-radius: 100%;
+  background-color: white;
   height: 6vh;
   border:none;
 }
@@ -27,10 +29,19 @@
   background-color: gray;
 }
 #header input{
+  font-family: "Comfortaa";
   position: fixed;
-  margin-left:43%;
-  margin-top:2.5vh;
+  margin-left:40%;
+  top:3vh;
   height:1.5rem;
+  width:14rem;
+}
+#header span{
+  margin-left:10%;
+  position: fixed;
+  top:4vh;
+  color: white;
+  font-family: "Comfortaa";
 }
 #aside {
   color:white;
@@ -45,6 +56,7 @@
   text-decoration: none;
 }
 #firsttext{
+  font-family: "Comfortaa";
   color: gray;
 }
 #aside img{
@@ -53,13 +65,19 @@
   height:15vh;
 }
 .autors > span {
+  font-family: "Comfortaa";
   position:absolute;
   margin-top: 7.5vh;
   margin-left: 5%;
 }
+.autors > h6 {
+  font-family: "Play";
+  position:absolute;
+  margin-left: 5%;
+}
 #main {
   height: 100vh;
-  background-color: #FDD9B5;
+  background-color: white;
   font-family: "Comfortaa";
   padding-top:10.45vh;
   width:100%;
@@ -67,7 +85,7 @@
 #main button{
   border-radius: 0;
   border: none;
-  background-color:#FFE4B5;
+  background-color: white;
   font-family: "Comfortaa";
   width:100%;
   height: 100px;
@@ -75,6 +93,14 @@
 #main button:active{
   transition-duration: 0.25s;
   background-color: #E0FFFF;
+}
+#main button > p{
+  color:black;
+  line-height: 3rem;
+}
+#main button > span{
+  font-family: "Play";
+  color: gray;
 }
 #main h1{
   margin-left: 0.5%;
