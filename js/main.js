@@ -36,6 +36,10 @@ function onclickButton(el) {
     document.getElementById("main").append(inf);
     let dive =  document.createElement('div');
     document.getElementById("main").append(dive);
+    let probel =  document.createElement('div');
+    probel.style.backgroundColor = "white";
+    probel.style.height = "2rem";
+    document.getElementById("main").append(probel);
   }
   let button = document.createElement('button');
   button.style.backgroundColor = "lightgray";
