@@ -12,8 +12,8 @@
   background-size: contain;
 }
 #header button{
-  margin-top: 1.5rem;
-  margin-left: 1.5rem;
+  margin-top: 2vh;
+  margin-left: 2vh;
   border-radius: 100%;
   background-color: white;
   height: 6vh;
@@ -37,7 +37,6 @@
   width:14rem;
 }
 #header span{
-  margin-left:10%;
   position: fixed;
   top:4vh;
   color: white;
@@ -96,7 +95,6 @@
 }
 #main button > p{
   color:black;
-  line-height: 3rem;
 }
 #main button > span{
   font-family: "Play";
