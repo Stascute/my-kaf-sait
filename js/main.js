@@ -23,7 +23,6 @@ function onclickbase(){
   document.getElementById("main").append(button);
 }
 onclickbase()
-//hlp[i] + " : " + arr[el.id][hlp[i]]
 function onclickButton(el) {
   let l = el.id
   document.getElementById("main").innerHTML = "";
@@ -38,8 +37,7 @@ function onclickButton(el) {
     document.getElementById("main").append(dive);
     let probel =  document.createElement('div');
     probel.style.backgroundColor = "white";
-    probel.style.height = "4rem";
-    console.log("gjx");
+    probel.style.height = "2rem";
     document.getElementById("main").append(probel);
   }
   let button = document.createElement('button');
