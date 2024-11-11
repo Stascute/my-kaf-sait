@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Play:wght@400;700&display=swap');
+:root {
+  --fontforAnia: "Comfortaa";
+}
 *{
   margin:0;
   padding:0;
@@ -29,7 +32,7 @@
   background-color: gray;
 }
 #header input{
-  font-family: "Comfortaa";
+  font-family: var(--fontforAnia);
   position: fixed;
   margin-left:40%;
   top:3vh;
@@ -41,11 +44,11 @@
   position: fixed;
   top:4vh;
   color: white;
-  font-family: "Comfortaa";
+  font-family: var(--fontforAnia);
 }
 #aside {
   color:white;
-  font-family: "Comfortaa";
+  font-family: var(--fontforAnia);
   position: fixed;
   top:10vh;
   height: 80vh;
@@ -64,7 +67,7 @@
   color:black;
 }
 #firsttext{
-  font-family: "Comfortaa";
+  font-family: var(--fontforAnia);
   color: gray;
 }
 #aside img{
@@ -73,7 +76,7 @@
   height:15vh;
 }
 .autors > span {
-  font-family: "Comfortaa";
+  font-family: var(--fontforAnia);
   position:absolute;
   margin-top: 7.5vh;
   margin-left: 5%;
@@ -86,7 +89,7 @@
 #main {
   height: 100vh;
   background-color: white;
-  font-family: "Comfortaa";
+  font-family: var(--fontforAnia);
   padding-top:10.45vh;
   width:100%;
 }
@@ -94,7 +97,7 @@
   border-radius: 0;
   border: none;
   background-color: white;
-  font-family: "Comfortaa";
+  font-family: var(--fontforAnia);
   width:100%;
   height: 100px;
 }
@@ -146,5 +149,5 @@
   width:3%;
 }
 #footer button > p{
-  font-family: "Comfortaa";
+  font-family: var(--fontforAnia);
 }
