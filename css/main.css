@@ -49,7 +49,7 @@
   position: fixed;
   top:10vh;
   height: 80vh;
-  background-color:#070714;
+  background-color:black;
   visibility : hidden;
 }
 #aside a{
@@ -104,13 +104,11 @@
 }
 #main h1{
   margin-left: 0.5%;
-  line-height: 5;
   color: gray;
   font-size: 0.8rem;
 }
 #main p{
   margin-left: 0.5%;
-  margin-top: -1.5rem;
 }
 #main > div{
   background-color: lightgray;
@@ -122,13 +120,13 @@
   position: fixed;
   width:100%;
   height: 10vh;
-  background-color:#070714;
+  background-color:black;
   font-family: "Play";
 }
 #footer button{
   color: white;
   border: none;
-  background-color: #070714;
+  background-color: black;
   width:100%;
   height: 10vh;
 }
