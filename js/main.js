@@ -38,7 +38,8 @@ function onclickButton(el) {
     document.getElementById("main").append(dive);
     let probel =  document.createElement('div');
     probel.style.backgroundColor = "white";
-    probel.style.height = "2rem";
+    probel.style.height = "4rem";
+    console.log("gjx");
     document.getElementById("main").append(probel);
   }
   let button = document.createElement('button');
