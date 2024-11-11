@@ -6,7 +6,9 @@ let arr = [{"Отделение":"Ядерной физики","Кафедра":
 if (window.innerWidth < 750){
   document.getElementById("strtxt").innerHTML = "";
   document.getElementById("input").style.marginLeft = "5%";
-
+  document.getElementById("information").style.height = "7vh";
+  document.getElementById("information").style.marginLeft = "1%";
+  document.getElementById("information").style.marginTop = "1vh";
 }
 function onclickbase(){
   document.getElementById("main").innerHTML = "";
