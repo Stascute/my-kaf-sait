@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Play:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
 *{
   margin:0;
   padding:0;
@@ -30,7 +29,7 @@
   background-color: gray;
 }
 #header input{
-  font-family: "STIX+Two+Text";
+  font-family: "Comfortaa";
   position: fixed;
   margin-left:40%;
   top:3vh;
@@ -42,11 +41,11 @@
   position: fixed;
   top:4vh;
   color: white;
-  font-family: "STIX+Two+Text";
+  font-family: "Comfortaa";
 }
 #aside {
   color:white;
-  font-family: "STIX+Two+Text";
+  font-family: "Comfortaa";
   position: fixed;
   top:10vh;
   height: 80vh;
@@ -65,7 +64,7 @@
   color:black;
 }
 #firsttext{
-  font-family: "STIX+Two+Text";
+  font-family: "Comfortaa";
   color: gray;
 }
 #aside img{
@@ -74,7 +73,7 @@
   height:15vh;
 }
 .autors > span {
-  font-family: "STIX+Two+Text";
+  font-family: "Comfortaa";
   position:absolute;
   margin-top: 7.5vh;
   margin-left: 5%;
@@ -87,7 +86,7 @@
 #main {
   height: 100vh;
   background-color: white;
-  font-family: "STIX+Two+Text";
+  font-family: "Comfortaa";
   padding-top:10.45vh;
   width:100%;
 }
@@ -95,7 +94,7 @@
   border-radius: 0;
   border: none;
   background-color: white;
-  font-family: "STIX+Two+Text";
+  font-family: "Comfortaa";
   width:100%;
   height: 100px;
 }
@@ -147,5 +146,5 @@
   width:3%;
 }
 #footer button > p{
-  font-family: "STIX+Two+Text";
+  font-family: "Comfortaa";
 }
