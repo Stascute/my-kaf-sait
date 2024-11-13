@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
-  --fontforAnia: "Comfortaa";
+  --fontforAnia: "Montserrat";
 }
 *{
   margin:0;
@@ -40,6 +40,7 @@
   width:14rem;
 }
 #header span{
+  margin-left: 0.5%;
   font-weight: 700;
   position: fixed;
   top:4vh;
@@ -61,6 +62,9 @@
   text-decoration: none;
 }
 #aside p{
+  margin-left: 1%;
+}
+#aside h3{
   margin-left: 0.5%;
 }
 #importp{
@@ -76,6 +80,7 @@
   height:15vh;
 }
 .autors > span {
+  white-space: nowrap;
   font-family: var(--fontforAnia);
   position:absolute;
   margin-top: 7.5vh;
